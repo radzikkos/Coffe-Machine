@@ -17,10 +17,7 @@ abstract public class Item {
     public void restore() {
         amount = amountToBegin;
     }
-    /* Musi rzucac wyjatek, by potem kawa mogla go przechwycic
-    i powiedzec, czy udalo sie zrobic, czy tez nie
-    lub flage
-    */
+
     public boolean checkIfItsAbleToBeUsedWithThisValue(int amountToUse){
         if(amount - amountToUse >= 0 ){
             isAbleToBeUsed = true;
